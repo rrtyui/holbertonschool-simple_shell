@@ -1,0 +1,23 @@
+./Manpage for shell
+.TH man 3 "25 July 2022" "shell man page"
+
+.SH NAME
+.B shell - Command interpreter (shell)
+
+.SH SYNOPSIS
+
+.SH DESCRIPTION
+shell is a reproduction of a standard command interpreter for the system.
+Written in C and compiled on Ubuntu 20.04 LTS using GCC version 9.4.0.
+
+.SH EXAMPLES
+
+.SH BUGS
+No bugs known.
+
+.SH AUTHORS
+Marcelo Casaña <marcelo.casana@holbertonstudents.com> and Felippe Mari <felippe.mari@holbertonstudents.com>
+
+.SH COPYRIGHT
+Copyright 2022 Holberton School Uruguay
+

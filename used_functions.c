@@ -51,3 +51,22 @@ int get_env(void)
 	return (0);
 }
 
+int prompt_s(void)
+{
+
+	if (isatty(STDIN_FILENO) == 1)
+	{
+		write(1, "#cisfun$ ", 9);
+	}
+	return (0);
+
+}
+
+void catch_ctrd(int sign)
+{
+	if (sign == SIGINT)
+	{
+		write(STDOUT_FILENO, "\n", 2);
+		prompt_s();
+	}
+}

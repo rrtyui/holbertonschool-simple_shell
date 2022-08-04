@@ -11,7 +11,7 @@ char **stoken(char *buffer)
 	char *tokeni;
 	int i;
 
-	tokeni = strtok(buffer, " \n\t");
+	tokeni = strtok(buffer, " \n\t ");
 
 	if(tokeni == NULL)
 		return (NULL);

@@ -16,9 +16,9 @@ int main(void)
 	{
 		prompt_s();
 
-		signal(SIGINT,catch_ctrd);
+		signal(SIGINT, catch_ctrd);
 
-		mgetline = getline(&buffer,&bsize,stdin);
+		mgetline = getline(&buffer, &bsize, stdin);
 
 		if (mgetline == EOF)
 		{
@@ -30,24 +30,24 @@ int main(void)
 		}
 		b_token = stoken(buffer);
 
-		if(b_token[0] == NULL)
+		if (b_token[0] == NULL)
 		{
 			continue;
 			free(buffer);
 			free(b_token);
 		}
 
-		if (_strcmp(b_token[0],"exit") == 0)
+		if (_strcmp(b_token[0], "exit") == 0)
 		{
-			free (b_token);
-			free (buffer);
+			free(b_token);
+			free(buffer);
 			exit(0);
 		}
 
-		if (_strcmp(b_token[0],"exit") == 0)
+		if (_strcmp(b_token[0], "exit") == 0)
 		{
-			free (b_token);
-			free (buffer);
+			free(b_token);
+			free(buffer);
 			exit(0);
 		}
 

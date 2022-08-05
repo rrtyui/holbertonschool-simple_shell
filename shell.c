@@ -27,6 +27,11 @@ int main(void)
 			continue;
 		}
 		b_token = stoken(buffer);
+		
+		if (b_token == null)
+		{
+			break;
+		}
 		if (b_token[0] == NULL)
 		{
 			free(b_token);

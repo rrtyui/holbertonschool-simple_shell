@@ -61,6 +61,24 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 	hsh main.c shell.c test_ls_2
 	$
 
+## Output
+
+### Example of error with sh:
+
+	$ echo "qwerty" | /bin/sh
+	/bin/sh: 1: qwerty: not found
+	$ echo "qwerty" | /bin/../bin/sh
+	/bin/../bin/sh: 1: qwerty: not found
+	$
+
+### Same error with your program hsh:
+
+	$ echo "qwerty" | ./hsh
+	./hsh: 1: qwerty: not found
+	$ echo "qwerty" | ./././hsh
+	./././hsh: 1: qwerty: not found
+	$
+
 ## FLOWCHART
 
 ![flowchart](Coming soon...)

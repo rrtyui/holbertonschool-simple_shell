@@ -49,16 +49,16 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 
 ### Non-interactive mode:
 
-	$ echo "/bin/ls" | ./simple_shell
-	simple_shell main.c shell.c test_ls_2
+	$ echo "/bin/ls" | ./simple_hsh
+	hsh main.c shell.c test_ls_2
 	$
 	$ cat test_ls_2
 	/bin/ls
 	/bin/ls
 	$
 	$ cat test_ls_2 | ./hsh
-	simple_shell main.c shell.c test_ls_2
-	simple_shell main.c shell.c test_ls_2
+	hsh main.c shell.c test_ls_2
+	hsh main.c shell.c test_ls_2
 	$
 
 ## FLOWCHART

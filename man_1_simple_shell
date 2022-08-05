@@ -1,16 +1,43 @@
-./Manpage for shell
+./Manpage for simple_shell
 .TH man 3 "25 July 2022" "shell man page"
 
 .SH NAME
-.B shell - Command interpreter (shell)
+.B simple_shell - Command interpreter (shell)
 
 .SH SYNOPSIS
+.B ./simple_shell [option]
 
 .SH DESCRIPTION
-shell is a reproduction of a standard command interpreter for the system.
+.nf
+simple_shell is a reproduction of a standard command interpreter for the system.
 Written in C and compiled on Ubuntu 20.04 LTS using GCC version 9.4.0.
 
 .SH EXAMPLES
+
+.SS Interactive mode:
+
+.nf
+$ ./simple_shell
+$ /bin/ls
+simple_shell main.c shell.c
+$
+$ exit
+$
+
+.SS Non-interactive mode:
+
+.nf
+$ echo "/bin/ls" | ./simple_shell
+simple_shell main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./simple_shell
+simple_shell main.c shell.c test_ls_2
+simple_shell main.c shell.c test_ls_2
+$
 
 .SH BUGS
 No bugs known.

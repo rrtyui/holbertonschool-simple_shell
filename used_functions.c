@@ -28,7 +28,11 @@ int child_p (char **args)
 	else
 	{
 		wait(&status);
-		free(args);
+		if (WIFEXITED(status))
+		{
+			free(args);
+			return (WEXITSTATUS(status));
+		}
 	}
 	return (0);
 }

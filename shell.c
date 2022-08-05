@@ -37,12 +37,6 @@ int main(void)
 			free(buffer);
 			exit(0);
 		}
-		if (_strcmp(b_token[0], "exit") == 0)
-		{
-			free(b_token);
-			free(buffer);
-			exit(0);
-		}
 		if (_strcmp(b_token[0], "env") == 0)
 		{
 			get_env();

@@ -36,9 +36,11 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 
 `README.md` - Information about the repository
 
-## EXAMPLE
+## EXAMPLES
 
-### Interactive mode:
+### Input
+
+#### Interactive mode:
 
 	$ ./hsh
 	$ /bin/ls
@@ -47,7 +49,7 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 	$ exit
 	$
 
-### Non-interactive mode:
+#### Non-interactive mode:
 
 	$ echo "/bin/ls" | ./simple_hsh
 	hsh main.c shell.c test_ls_2
@@ -61,9 +63,9 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 	hsh main.c shell.c test_ls_2
 	$
 
-## Output
+### Output
 
-### Example of error with sh:
+#### Example of error with sh:
 
 	$ echo "qwerty" | /bin/sh
 	/bin/sh: 1: qwerty: not found
@@ -71,7 +73,7 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 	/bin/../bin/sh: 1: qwerty: not found
 	$
 
-### Same error with your program hsh:
+#### Same error with your program hsh:
 
 	$ echo "qwerty" | ./hsh
 	./hsh: 1: qwerty: not found

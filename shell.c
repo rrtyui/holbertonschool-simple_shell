@@ -11,6 +11,7 @@ int main(void)
 	int mgetline;
 	char **b_token;
 	size_t bsize = 0;
+	int return_exit = 0;
 
 	while (1)
 	{
@@ -35,7 +36,7 @@ int main(void)
 		{
 			free(b_token);
 			free(buffer);
-			exit(0);
+			return (return_exit);
 		}
 		if (_strcmp(b_token[0], "env") == 0)
 		{
@@ -46,8 +47,8 @@ int main(void)
 			}
 			continue;
 		}
-		child_p(b_token);
+		return_exit = child_p(b_token);
 	}
 	free(buffer);
-	return (0);
+	return (return_exit);
 }

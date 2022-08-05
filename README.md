@@ -20,36 +20,41 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 # FILES & FUNCTIONS
 
 `shell.c` - main program
+
 `main.h` - main header file: includes to libraries, structs and functions needed
+
 `man_1_simple_shell` - man page
+
 `stokeni.c` - function to tokenize certain buffer
+
 `str_functions.c` - various string functions
+
 `used_functions.c` - other functions
 
 ## EXAMPLE
 
-Interactive mode:
+# Interactive mode:
 
-$ ./hsh
-$ /bin/ls
-simple_shell  main.c shell.c
-$
-$ exit
-$
+	$ ./hsh
+	$ /bin/ls
+	hsh main.c shell.c
+	$
+	$ exit
+	$
 
-Non-interactive mode:
+# Non-interactive mode:
 
-$ echo "/bin/ls" | ./simple_shell
-simple_shell main.c shell.c test_ls_2
-$
-$ cat test_ls_2
-/bin/ls
-/bin/ls
-$
-$ cat test_ls_2 | ./hsh
-simple_shell main.c shell.c test_ls_2
-simple_shell main.c shell.c test_ls_2
-$
+	$ echo "/bin/ls" | ./simple_shell
+	simple_shell main.c shell.c test_ls_2
+	$
+	$ cat test_ls_2
+	/bin/ls
+	/bin/ls
+	$
+	$ cat test_ls_2 | ./hsh
+	simple_shell main.c shell.c test_ls_2
+	simple_shell main.c shell.c test_ls_2
+	$
 
 ## FLOWCHART
 

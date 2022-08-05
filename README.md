@@ -1,4 +1,4 @@
-#SIMPLE SHELL PROJECT
+# SIMPLE SHELL PROJECT
 
 Developed by Marcelo Casaña and Felippe Mari for Holberton School Uruguay.
 
@@ -17,7 +17,7 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 
 	$ gcc -Wall -Werror -Wextra -pedantiic -std=gnu89 *.c -o hsh
 
-# FILES & FUNCTIONS
+## FILES & FUNCTIONS
 
 `shell.c` - main program
 
@@ -33,7 +33,7 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 
 ## EXAMPLE
 
-# Interactive mode:
+### Interactive mode:
 
 	$ ./hsh
 	$ /bin/ls
@@ -42,7 +42,7 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 	$ exit
 	$
 
-# Non-interactive mode:
+### Non-interactive mode:
 
 	$ echo "/bin/ls" | ./simple_shell
 	simple_shell main.c shell.c test_ls_2

@@ -28,7 +28,7 @@ int main(void)
 		}
 		b_token = stoken(buffer);
 		
-		if (b_token == null)
+		if (b_token == NULL)
 		{
 			break;
 		}

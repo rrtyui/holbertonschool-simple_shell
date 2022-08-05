@@ -73,7 +73,7 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 	/bin/../bin/sh: 1: qwerty: not found
 	$
 
-#### Same error with hsh:
+#### Same error with our Shell hsh:
 
 	$ echo "qwerty" | ./hsh
 	./hsh: 1: qwerty: not found

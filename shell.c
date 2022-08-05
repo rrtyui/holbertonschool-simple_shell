@@ -28,9 +28,8 @@ int main(void)
 		b_token = stoken(buffer);
 		if (b_token[0] == NULL)
 		{
-			continue;
-			free(buffer);
 			free(b_token);
+			continue;
 		}
 		if (_strcmp(b_token[0], "exit") == 0)
 		{

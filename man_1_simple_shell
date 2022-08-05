@@ -2,14 +2,14 @@
 .TH man 3 "25 July 2022" "shell man page"
 
 .SH NAME
-.B simple_shell - Command interpreter (shell)
+.B hsh - Command interpreter (shell)
 
 .SH SYNOPSIS
-.B ./simple_shell [option]
+.B ./hsh [option]
 
 .SH DESCRIPTION
 .nf
-simple_shell is a reproduction of a standard command interpreter for the system.
+hsh is a reproduction of a standard command interpreter for the system.
 Written in C and compiled on Ubuntu 20.04 LTS using GCC version 9.4.0.
 
 .SH EXAMPLES
@@ -17,9 +17,9 @@ Written in C and compiled on Ubuntu 20.04 LTS using GCC version 9.4.0.
 .SS Interactive mode:
 
 .nf
-$ ./simple_shell
+$ ./hsh
 $ /bin/ls
-simple_shell main.c shell.c
+hsh main.c shell.c
 $
 $ exit
 $
@@ -27,16 +27,16 @@ $
 .SS Non-interactive mode:
 
 .nf
-$ echo "/bin/ls" | ./simple_shell
-simple_shell main.c shell.c test_ls_2
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
 $
 $ cat test_ls_2
 /bin/ls
 /bin/ls
 $
-$ cat test_ls_2 | ./simple_shell
-simple_shell main.c shell.c test_ls_2
-simple_shell main.c shell.c test_ls_2
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
 $
 
 .SH BUGS

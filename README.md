@@ -7,7 +7,8 @@ Developed by Marcelo Casaña and Felippe Mari for Holberton School Uruguay.
 The project is a reproduction of a standard command interpreter for the system.
 Written in C and compiled on Ubuntu 20.04 LTS using GCC version 9.4.0.
 
-What does it do
+# What does it do
+Interprets orders.
 How to use it
 
 ## COMPILATION
@@ -19,6 +20,11 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 # FILES & FUNCTIONS
 
 `shell.c` - main program
+`main.h` - main header file: includes to libraries, structs and functions needed
+`man_1_simple_shell` - man page
+`stokeni.c` - function to tokenize certain buffer
+`str_functions.c` - various string functions
+`used_functions.c` - other functions
 
 ## EXAMPLE
 

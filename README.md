@@ -8,8 +8,9 @@ The project is a reproduction of a standard command interpreter for the system.
 Written in C and compiled on Ubuntu 20.04 LTS using GCC version 9.4.0.
 
 # What does it do
-Interprets orders.
-How to use it
+Interprets orders when an input is given.
+
+Incorporates features such as: process control, I/O redirection, etc.
 
 ## COMPILATION
 
@@ -30,6 +31,10 @@ Program is compiled on Ubuntu 20.04 LTS with the following command:
 `str_functions.c` - various string functions
 
 `used_functions.c` - other functions
+
+`AUTHORS` - Contributors in the repository
+
+`README.md` - Information about the repository
 
 ## EXAMPLE
 
